@@ -1,0 +1,357 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Mori Mochi — Cafe Bakery</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="logo" href="#home" aria-label="Mori Mochi">
+        <svg width="36" height="36" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M3 10c0 4.418 3.582 8 8 8s8-3.582 8-8H3z" fill="#2E6B3A"/>
+          <path d="M12 4c1.5 0 3 1.5 3 3s-1.5 3-3 3-3-1.5-3-3 1.5-3 3-3z" fill="#C9EBCF"/>
+        </svg>
+        <span class="brand">Mori Mochi</span>
+      </a>
+      <nav class="nav">
+        <a href="#menu">Menu</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#about">About</a>
+        <a href="#contact" class="cta">Order</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section id="home" class="hero">
+      <div class="container hero-grid">
+        <div class="hero-text">
+          <h1>Welcome to our cozy bakery, a sweet escape from your everyday.</h1>
+          <p>Matcha lattes, single-origin coffees, and artisan pastries made daily — a cozy place to start your day.</p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#menu">Explore Menu</a>
+            <a class="btn btn-ghost" href="#gallery">See Gallery</a>
+          </div>
+        </div>
+        <div class="hero-art">
+          <img src="assets/matcha 3.avif" alt="Matcha" class="hero-image">
+        </div>
+      </div>
+    </section>
+
+    <section class="specials-banner">
+      <div class="container">
+        <div class="banner-content">
+          <h3>✨ Specials of the Week ✨</h3>
+          <p>Try our new Mochi Donuts & Fried Sesame Balls — limited time only!</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="menu" class="section">
+      <div class="container">
+        <div class="section-header">
+          <h2>Our Menu</h2>
+          <p class="muted">Curated matcha, coffee, and pastries — seasonal and house-made.</p>
+        </div>
+        <div class="filters">
+          <button class="filter active" data-filter="all">All</button>
+          <button class="filter" data-filter="matcha">Matcha</button>
+          <button class="filter" data-filter="coffee">Coffee</button>
+          <button class="filter" data-filter="dessert">Dessert</button>
+          <button class="filter" data-filter="pastry">Pastries</button>
+        </div>
+        <div class="menu-grid" id="menuGrid">
+          <article class="card" data-type="matcha">
+            <div class="card-media" style="background: linear-gradient(135deg,#CFF1D0,#8CCF8A)">
+              <img src="assets/matcha latte.jpg" alt="Ceremonial Matcha" class="menu-thumb">
+            </div>
+            <div class="card-body">
+              <h3>Ceremonial Matcha</h3>
+              <p class="muted">Whisked to a velvety foam — pure and vibrant.</p>
+              <div class="price">$4.50</div>
+            </div>
+          </article>
+
+          <article class="card" data-type="coffee">
+            <div class="card-media" style="background: linear-gradient(135deg,#F6E7D6,#D8B38A)">
+              <img src="assets/latte.jpg" alt="Single Origin Latte" class="menu-thumb">
+            </div>
+            <div class="card-body">
+              <h3>Single Origin Latte</h3>
+              <p class="muted">Bright notes, steamed milk — ask for bean of the day.</p>
+              <div class="price">$4.00</div>
+            </div>
+          </article>
+
+          <article class="card" data-type="pastry">
+            <div class="card-media" style="background: linear-gradient(135deg,#FFF3E2,#FFD9B5)">
+              <img src="assets/yuzu cake.jpeg" alt="Yuzu Pound Cake" class="menu-thumb">
+            </div>
+            <div class="card-body">
+              <h3>Yuzu Pound Cake</h3>
+              <p class="muted">Soft crumb with a bright citrus lift.</p>
+              <div class="price">$3.75</div>
+            </div>
+          </article>
+
+          <article class="card" data-type="matcha">
+            <div class="card-media" style="background: linear-gradient(135deg,#CFF1D0,#8CCF8A)">
+              <img src="assets/matcha affogato.webp" alt="Matcha Affogato" class="menu-thumb">
+            </div>
+            <div class="card-body">
+              <h3>Matcha Affogato</h3>
+              <p class="muted">Cold matcha crema over vanilla — delightful contrast.</p>
+              <div class="price">$5.25</div>
+            </div>
+          </article>
+
+          <article class="card" data-type="matcha">
+            <div class="card-media" style="background: linear-gradient(135deg,#CFF1D0,#8CCF8A)">
+              <img src="assets/matcha cloud.webp" alt="Coconut Matcha Cloud" class="menu-thumb">
+            </div>
+            <div class="card-body">
+              <h3>Coconut Matcha Cloud</h3>
+              <p class="muted">Creamy matcha foam with fresh coconut water.</p>
+              <div class="price">$5.00</div>
+            </div>
+          </article>
+
+          <article class="card" data-type="coffee">
+            <div class="card-media" style="background: linear-gradient(135deg,#F6E7D6,#D8B38A)">
+              <img src="assets/coconut coffee.png" alt="Vietnamese Coconut Coffee" class="menu-thumb">
+            </div>
+            <div class="card-body">
+              <h3>Vietnamese Coconut Coffee</h3>
+              <p class="muted">Shot of espresso over a sweetened coconut milk slush.</p>
+              <div class="price">$4.50</div>
+            </div>
+          </article>
+
+          <article class="card" data-type="coffee">
+            <div class="card-media" style="background: linear-gradient(135deg,#F6E7D6,#D8B38A)">
+              <img src="assets/yummers.jpg" alt="Thai Iced Coffee" class="menu-thumb">
+            </div>
+            <div class="card-body">
+              <h3>Thai Iced Coffee</h3>
+              <p class="muted">Rich thai coffee blend with spices, evaporated milk, and condensed milk.</p>
+              <div class="price">$4.50</div>
+            </div>
+          </article>
+
+          <article class="card" data-type="coffee">
+            <div class="card-media" style="background: linear-gradient(135deg,#F6E7D6,#D8B38A)">
+              <img src="assets/sesame latte.png" alt="Black Sesame Latte" class="menu-thumb">
+            </div>
+            <div class="card-body">
+              <h3>Black Sesame Latte</h3>
+              <p class="muted">Espresso with black sesame paste and brown sugar syrup.</p>
+              <div class="price">$4.75</div>
+            </div>
+          </article>
+
+          <article class="card" data-type="dessert">
+            <div class="card-media" style="background: linear-gradient(135deg,#FFE4C4,#FFDAB9)">
+              <img src="assets/MangoSago.jpg" alt="Mango Pomelo Sago" class="menu-thumb">
+            </div>
+            <div class="card-body">
+              <h3>Mango Pomelo Sago</h3>
+              <p class="muted">Coconut milk with jelly, sago pearls, fresh mango chunks, and pomelo.</p>
+              <div class="price">$5.50</div>
+            </div>
+          </article>
+
+          <article class="card" data-type="dessert">
+            <div class="card-media" style="background: linear-gradient(135deg,#FFE4C4,#FFDAB9)">
+              <img src="assets/warabi mochi.png" alt="Warabi Mochi" class="menu-thumb">
+            </div>
+            <div class="card-body">
+              <h3>Warabi Mochi</h3>
+              <p class="muted">Chilled jelly mochi with brown sugar syrup and soybean powder.</p>
+              <div class="price">$4.25</div>
+            </div>
+          </article>
+
+          <article class="card" data-type="pastry">
+            <div class="card-media" style="background: linear-gradient(135deg,#FFF3E2,#FFD9B5)">
+              <img src="assets/mochi donuts.jpeg" alt="Mochi Donut" class="menu-thumb">
+            </div>
+            <div class="card-body">
+              <h3>Mochi Donut</h3>
+              <p class="muted">Chewy, fried rice dough with matcha glaze.</p>
+              <div class="price">$3.25</div>
+            </div>
+          </article>
+
+          <article class="card" data-type="pastry">
+            <div class="card-media" style="background: linear-gradient(135deg,#FFF3E2,#FFD9B5)">
+              <img src="assets/Sesame balls.jpg" alt="Fried Sesame Balls" class="menu-thumb">
+            </div>
+            <div class="card-body">
+              <h3>Fried Sesame Balls</h3>
+              <p class="muted">Crispy fried pastry with chewy interior and sweet red bean filling.</p>
+              <div class="price">$3.50</div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="gallery" class="section gallery-section">
+      <div class="container">
+        <div class="section-header">
+          <h2>Gallery</h2>
+          <p class="muted">Snapshots from our cozy corner and daily bakes.</p>
+        </div>
+        <div class="gallery-grid">
+          <img src="assets/matcha 2.avif" alt="Matcha" class="photo">
+          <img src="assets/latte.jpg" alt="Latte" class="photo">
+          <img src="assets/matcha 4.avif" alt="Matcha" class="photo">
+        </div>
+      </div>
+    </section>
+
+    <section id="testimonials" class="section testimonials-section">
+      <div class="container">
+        <div class="section-header">
+          <h2>What Our Customers Say</h2>
+        </div>
+        <div class="testimonials-grid">
+          <div class="testimonial-card">
+            <div class="stars">★★★★★</div>
+            <p class="testimonial-text">"The matcha latte is perfection. Every sip feels like a morning ritual."</p>
+            <p class="testimonial-author">— Sarah M.</p>
+          </div>
+          <div class="testimonial-card">
+            <div class="stars">★★★★★</div>
+            <p class="testimonial-text">"Fresh pastries daily. The yuzu cake is my weakness. Highly recommend!"</p>
+            <p class="testimonial-author">— James K.</p>
+          </div>
+          <div class="testimonial-card">
+            <div class="stars">★★★★★</div>
+            <p class="testimonial-text">"Cozy atmosphere, friendly staff, and incredible coffee. Best spot in town!"</p>
+            <p class="testimonial-author">— Emma T.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="section">
+      <div class="container about-grid">
+        <div>
+          <h2>About Us</h2>
+          <p class="muted">We are a small bakery-cafe inspired by morning rituals and the simple joy of a quiet cup. Ingredients are chosen thoughtfully with an emphasis on balance and texture.</p>
+          <ul class="about-features">
+            <li>Locally roasted beans</li>
+            <li>Stone-ground ceremonial matcha</li>
+            <li>Daily from-scratch pastries</li>
+          </ul>
+        </div>
+        <div class="about-card">
+          <div class="mini-card">
+            <h3>Open Daily</h3>
+            <p class="muted">7am — 4pm</p>
+          </div>
+          <div class="mini-card">
+            <h3>Delivery</h3>
+            <p class="muted">Local delivery via partner</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="faq" class="section faq-section">
+      <div class="container">
+        <div class="section-header">
+          <h2>Frequently Asked Questions</h2>
+          <p class="muted">Got questions? We've got answers.</p>
+        </div>
+        <div class="faq-container">
+          <div class="faq-item">
+            <button class="faq-question">Is your matcha organic and ceremonial grade?
+              <span class="faq-toggle">+</span></button>
+            <div class="faq-answer" style="display:none">
+              <p>Yes! We source stone-ground ceremonial matcha from trusted suppliers. Each batch is carefully selected for quality and purity.</p>
+            </div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-question">Do you have dairy-free options?
+              <span class="faq-toggle">+</span></button>
+            <div class="faq-answer" style="display:none">
+              <p>Absolutely. We offer oat, almond, and coconut milk alternatives for all our beverages at no extra charge.</p>
+            </div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-question">Are your pastries made fresh daily?
+              <span class="faq-toggle">+</span></button>
+            <div class="faq-answer" style="display:none">
+              <p>Yes, everything is baked fresh each morning. We don't use preservatives or frozen dough. Come early for the best selection!</p>
+            </div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-question">Do you offer online ordering or delivery?
+              <span class="faq-toggle">+</span></button>
+            <div class="faq-answer" style="display:none">
+              <p>We currently offer local delivery through our partners. You can order through the contact form or call ahead to reserve items.</p>
+            </div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-question">Can I book a group event or private time?
+              <span class="faq-toggle">+</span></button>
+            <div class="faq-answer" style="display:none">
+              <p>We'd love to host your group! Send us a message with details and dates, and we'll work out the perfect arrangement.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="newsletter" class="section newsletter-section">
+      <div class="container">
+        <div class="newsletter-content">
+          <h3>Stay in the Loop</h3>
+          <p>Get weekly updates on new seasonal drinks, pastry releases, and cozy cafe moments.</p>
+          <form class="newsletter-form" id="newsletterForm">
+            <input type="email" placeholder="Your email" required>
+            <button type="submit" class="btn btn-primary">Subscribe</button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="section contact-section">
+      <div class="container">
+        <div class="section-header">
+          <h2>Order / Contact</h2>
+          <p class="muted">Send us a message or request a special order.</p>
+        </div>
+        <form id="contactForm" class="contact-form">
+          <input type="text" name="name" placeholder="Your name" required>
+          <input type="email" name="email" placeholder="Email" required>
+          <textarea name="message" rows="4" placeholder="What would you like to order?" required></textarea>
+          <div class="form-actions">
+            <button class="btn btn-primary" type="submit">Send</button>
+            <button class="btn btn-ghost" type="reset">Clear</button>
+          </div>
+        </form>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© <span id="year"></span> Mori Mochi — All rights reserved.</p>
+      <div class="socials">☕️ 🍵 🥐</div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

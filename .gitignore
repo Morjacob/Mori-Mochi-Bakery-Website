@@ -1,0 +1,20 @@
+# Ignore common system files and editors
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Node / build
+node_modules/
+dist/
+.parcel-cache/
+
+# Specific log files
+npm-debug.log
+pnpm-debug.log
+yarn-debug.log
+
+# Secrets
+.env
+
+# IDE
+.vscode/
