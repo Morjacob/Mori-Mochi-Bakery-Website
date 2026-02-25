@@ -7,6 +7,4 @@ Title: Mori Mochi — Aesthetic UI Demo
 - Added CI/CD deployment to GitHub Pages via GitHub Actions (`.github/workflows/pages.yml`).
 - Responsibilities: visual design, responsive layout, front-end implementation, and deployment setup.
 
-Suggested one-line resume bullet:
-
-“Designed and developed a responsive, accessible single-page UI for a bakery cafe using HTML/CSS/JS and deployed via GitHub Actions (GitHub Pages).”
+Designed and developed a responsive, accessible single-page UI for a bakery cafe using HTML/CSS/JS and deployed via GitHub Actions (GitHub Pages).
